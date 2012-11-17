@@ -1,0 +1,54 @@
+git config --global user.name "Li Yan"
+git config --global user.email "lantimilan@gmail.com"
+
+git config --global core.editor 'emacs'
+
+git config user.name
+
+cat ~/.gitconfig
+
+# initialize a new git repository
+cd myproject
+git init
+git add .
+git commit -m 'initial commit'
+
+git log
+
+# clone a git repository
+git clone git://github.com/lantimilan/something.git
+
+
+git add newfile
+git commit -am 'my change'
+
+git reset
+
+git status
+
+git diff
+git diff --staged
+
+working   ----> staing ----> git repository
+directory       area
+
+
+# branching and merging
+git branch
+
+git branch experiment # create a new branch called experiment
+git checkout experiment # switched to branch "experiment"
+git branch
+
+git checkout master
+
+git push origin experiment # what is origin?
+
+git merge experiment
+# if conflict
+git add filename
+git commit
+
+git branch -d experiment # delete branch "experiment", use -D to force deletion
+
+# git server is called a remote
