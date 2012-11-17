@@ -52,3 +52,16 @@ git commit
 git branch -d experiment # delete branch "experiment", use -D to force deletion
 
 # git server is called a remote
+# When you do a clone of a repository, Git will automatically add a remote
+# reference for the repository you cloned, automatically naming it ‘origin’.
+# This is an alias, so you don’t have to type the whole URL again when getting
+# updates from it. Instead you can just run git fetch origin (instead of git
+# fetch git://server/path.git).
+
+git remote # prints origin
+
+git fetch origin # get updates from remote
+
+git push origin master  # push changes to remote
+
+git log
