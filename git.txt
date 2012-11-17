@@ -64,4 +64,40 @@ git fetch origin # get updates from remote
 
 git push origin master  # push changes to remote
 
-git log
+git log -p  # view patches
+
+git log --stat
+
+git log --pretty=raw oneline short medium full fuller email
+
+$ git log --pretty=format:"The author of %h was %an, %ar%nThe title was
+>>%s<<%n"
+
+$ git log --pretty=oneline --graph
+
+$ git log --before="2 weeks ago" --after="2009-01-26" --pretty=oneline
+
+$ git log --author=johannes.schindelin --since="14 days ago" --pretty=oneline
+
+$ git log --author='\.mil' --pretty=format:"%ae" | wc -l
+
+$ git log --grep='C90' --pretty=oneline
+
+file history
+$ git log --pretty=oneline -- notes.c 
+
+$ git log --pretty=oneline --all -- t/lib-httpd/
+
+$ git log --pretty=oneline -- t/lib-httpd/ notes.c
+
+$ git log --grep='C90' --pretty=oneline --no-merges
+
+$ git log --pretty=oneline --no-merges -5 # max number of commits
+
+[master]$ git log --pretty=oneline 710f0f..8a5cbc
+
+$ git log master..experiment --pretty=oneline
+
+$ git log ..experiment --pretty=oneline
+
+$ git log master.. --pretty=oneline
