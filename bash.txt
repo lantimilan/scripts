@@ -6,3 +6,7 @@ echo $[1+1]  # this outputs 2
 echo 3/4 | bc -l  # this outputs 0.75
 
 return value is in shell variable $?
+
+This will place every output of a program to a file. This is suitable sometimes for cron entries, if you want a command to pass in absolute silence.
+    rm -f $(find / -name core) &> /dev/null
+
