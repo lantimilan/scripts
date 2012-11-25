@@ -1,0 +1,6 @@
+# shell arithmetic
+echo $((1+1))  # this outputs 2
+
+echo $[1+1]  # this outputs 2
+
+echo 3/4 | bc -l  # this outputs 0.75
