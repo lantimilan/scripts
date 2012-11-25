@@ -101,3 +101,6 @@ $ git log master..experiment --pretty=oneline
 $ git log ..experiment --pretty=oneline
 
 $ git log master.. --pretty=oneline
+
+# show change
+$ git show --pretty="format:" --name-only bd61ad98
