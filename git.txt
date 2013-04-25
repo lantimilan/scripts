@@ -1,3 +1,42 @@
+### notes on git
+Wed Apr 24 19:12:54 PDT 2013
+========================================================
+/etc/gitconfig
+.gitconfig
+.git/config
+
+git config -l
+
+What git can do?
+- configure and initialize a repository
+- begin and stop tracking files
+- stage and commit changes
+- git ignore
+- undo operations
+- browser history/log
+- view changes between commits
+- push/pull from remote repositories
+
+cd my-project
+git init
+
+$ git clone git://github.com/schacon/grit.git mygrit
+git://
+http://
+https://
+user@server:/path.git
+
+file can be in state
+---------------------------------------------
+            add                    edit                  stage                commit
+untracked  --------  unmodified  -----------  modified  ----------  staged  ------------ unmodified
+            remove
+
+
+
+
+
+========================================================
 git config --global user.name "Li Yan"
 git config --global user.email "lantimilan@gmail.com"
 
